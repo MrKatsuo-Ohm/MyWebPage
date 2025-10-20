@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "BBH Sans Bogle", sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+
+   p{
+    padding: 6px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+   }
+
+   .header-main{
+        background-color: #2C3D92;
+        position: relative;
+        
+   }
+
+   .row{
+        align-content: center;
+        display: flex;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2C3D92;
+        align-items: center;
+        max-width: 1700px;
+        
+   }
+   .main-logo{
+        margin-right: 1rem;
+        align-items: center;
+   }
+   .main-search{
+    position: relative;
+    flex: 1 1 0px;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .search{
+        position: relative;
+        display: flex;
+        align-items: center;
+
+   }
+   .search-icon{
+    position: absolute;
+    left: 1rem;
+    z-index: 1;
+   }
+   .m-search-product{
+    position: relative;
+    width: 100%;
+   }
+   .search-product{
+    position: relative;
+    width: 100%;
+   }
+   
+   .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    color: #333;
+    
+}
+  .search-input{
+
+    padding-left: 3rem;
+    padding-right: 11.5rem;
+    height: 44px;
+    border-radius: 300px;
+    font-size: inherit;
+    width: 100%;
+  }
+  
+}
