@@ -14,10 +14,10 @@ body {
 }
 
 header{
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
 
-   p{
+     p{
     padding: 6px;
     height: 40px;
     text-align: center;
@@ -48,9 +48,10 @@ header{
    .main-search{
     position: relative;
     flex: 1 1 0px;
-    max-width: 670px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 750px;
+    margin-left: 200px;
+    margin-right: 40px;
+    
    }
    .search{
         position: relative;
@@ -95,6 +96,180 @@ header{
     border-radius: 300px;
     font-size: inherit;
     width: 100%;
+    border: 2px solid #333;
+  }
+  .search-input::-webkit-search-cancel-button{
+     -webkit-appearance: none;
+     appearance: none;
+  }
+
+  .social-icon{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     /* padding-right: 150px; */
+     margin-right: auto;
+  }
+
+  .social-icon a{
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     /* background-color: transparent; */
+     text-decoration: none;
+  }
+
+  .social-icon i{
+     font-size: 40px;
+     color: #ffffff;
+     line-height: 1;
+  }
+
+  i:hover{
+     transform: translateY(-5px);
+  }
+  .social-icon img:hover{
+     transform: translateY(-5px);
+  }
+
+  .social-icon img{
+     width: 50px;
+     height: 50px;
+     object-fit: contain;
+     filter: brightness(1.5)
+  }
+  .btn-cart{
+     border-radius: 500px;
+     border: none;
+     font-weight: 600;
+     transition: 150ms ease-in-out;
+     outline: none;
+     /* font-size: 14px; */
+     margin-left: 1rem;
+     background-color: rgb(255, 255, 255);
+     padding: 8px;
+     
+  }
+  .btn-cart:hover{
+     transform: translateY(-5px);
+     background-color: rgb(226, 226, 226);
+  }
+  .cart a{
+     text-decoration: none;
+     color: #333;
+     text-align: center;
   }
   
+}
+
+ 
+  
+
+/* พื้นหลัง modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* กล่อง popup */
+.popup {
+  background: white;
+  width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  padding: 30px;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-header h3 {
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+/* ฟอร์ม */
+.popup form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.popup button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #0072bc;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #aaa;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.social-login .facebook {
+  background: #1877f2;
+  color: white;
+  border: none;
+}
+
+.social-login .google {
+  background: white;
+  color: #333;
+}
+
+.register {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
